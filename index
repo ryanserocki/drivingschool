@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ryan's Driving School — personalised driving lessons across Adelaide's Eastern and North-Eastern suburbs, Tranmere test-area preparation and MDI preparation.">
+<title>Ryan's Driving School | Adelaide Eastern & North-Eastern Suburbs</title>
+<style>
+:root{--navy:#102a43;--blue:#1976d2;--sky:#eaf4ff;--green:#2f855a;--gold:#f4b942;--ink:#203040;--muted:#607080;--white:#fff;--light:#f7fafc;--border:#dce6ef}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.65;background:var(--white)}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(16,42,67,.97);color:white;box-shadow:0 2px 14px #0002}
+.navbar{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:1.3rem;font-weight:800;letter-spacing:-.3px}.logo span{color:#8ed1ff}
+.navlinks{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}.navlinks a{padding:9px 11px;border-radius:8px;font-size:.9rem}.navlinks a:hover{background:#ffffff18}
+.hero{background:linear-gradient(135deg,#102a43 0%,#174e7a 58%,#1976d2 100%);color:#fff;padding:82px 0 76px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:480px;height:480px;border:80px solid #ffffff10;border-radius:50%;right:-170px;top:-170px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center;position:relative;z-index:1}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;font-weight:800;color:#a9ddff;font-size:.82rem}
+h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.04;margin:12px 0 22px;letter-spacing:-2px}
+.hero p{font-size:1.16rem;max-width:680px;color:#e7f2fa}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:13px 21px;border-radius:9px;font-weight:800}.primary{background:var(--gold);color:#18212b}.secondary{border:1px solid #ffffff66;color:#fff}
+.hero-card{background:#ffffff12;border:1px solid #ffffff25;border-radius:18px;padding:26px;backdrop-filter:blur(8px)}.hero-card h3{margin-top:0}.hero-card .price{font-size:2rem;font-weight:900}.hero-card small{color:#d9ebf8}
+section{padding:74px 0}.alt{background:var(--light)}.section-head{text-align:center;max-width:760px;margin:0 auto 42px}.section-head h2{font-size:2.15rem;line-height:1.15;margin:0 0 12px;color:var(--navy)}.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:white;border:1px solid var(--border);border-radius:15px;padding:25px;box-shadow:0 8px 25px #102a4308}.card h3{color:var(--navy);margin-top:0}.icon{font-size:1.8rem}.price-grid{grid-template-columns:repeat(3,1fr)}.price-card{position:relative}.price{font-size:2.2rem;font-weight:900;color:var(--navy)}.featured{border:2px solid var(--blue);transform:translateY(-4px)}.tag{position:absolute;right:16px;top:16px;background:var(--sky);color:var(--blue);font-size:.75rem;font-weight:800;padding:4px 8px;border-radius:99px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.quote{border-left:4px solid var(--gold);padding:20px 24px;background:white;border-radius:0 12px 12px 0;box-shadow:0 6px 20px #00000008}.steps{counter-reset:step}.step{display:grid;grid-template-columns:48px 1fr;gap:15px;margin-bottom:22px}.step:before{counter-increment:step;content:counter(step);width:42px;height:42px;background:var(--navy);color:white;border-radius:50%;display:grid;place-items:center;font-weight:900}
+ul{padding-left:20px}li{margin:7px 0}.faq details{background:white;border:1px solid var(--border);border-radius:10px;padding:17px 20px;margin:10px 0}.faq summary{font-weight:800;cursor:pointer;color:var(--navy)}
+.callout{background:var(--navy);color:white;border-radius:18px;padding:34px}.callout h2{margin-top:0;color:white}.location-pills{display:flex;gap:10px;flex-wrap:wrap}.pill{background:var(--sky);color:var(--navy);padding:8px 12px;border-radius:99px;font-weight:700}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-box{padding:30px;border-radius:15px;border:1px solid var(--border);background:white}.contact a.cta{display:block;background:var(--blue);color:white;text-align:center;padding:14px;border-radius:9px;font-weight:900;margin-top:15px}
+footer{background:#091d2e;color:#cbd9e4;padding:35px 0}.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer strong{color:white}.note{font-size:.9rem;color:var(--muted)}
+.mobile-menu{display:none;background:none;border:1px solid #ffffff55;color:white;border-radius:7px;padding:8px}
+@media(max-width:850px){.hero-grid,.two,.contact{grid-template-columns:1fr}.grid,.price-grid{grid-template-columns:1fr}.navlinks{display:none}.mobile-menu{display:block}.navlinks.open{display:flex;position:absolute;left:0;right:0;top:70px;background:var(--navy);padding:10px;flex-direction:column}.hero{padding:58px 0}.featured{transform:none}}
+</style>
+</head>
+<body>
+<nav>
+<div class="container navbar">
+<a class="logo" href="#home">Ryan's <span>Driving School</span></a>
+<button class="mobile-menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">Menu</button>
+<div class="navlinks">
+<a href="#home">Home</a><a href="#lessons">Lessons</a><a href="#parents">For Parents</a><a href="#test">Test Preparation</a><a href="#mdi">MDI Preparation</a><a href="#about">About Ryan</a><a href="#faq">FAQ</a><a href="#contact">Book</a>
+</div></div></nav>
+
+<header class="hero" id="home"><div class="container hero-grid">
+<div><div class="eyebrow">Eastern & North-Eastern Adelaide</div>
+<h1>Learn to drive with confidence.</h1>
+<p>Personalised driving lessons for learners who want more than simply to pass a test. Build safe habits, develop confidence and become a capable, independent driver.</p>
+<div class="buttons"><a class="btn primary" href="#contact">Call to book a lesson</a><a class="btn secondary" href="#lessons">Explore lessons</a></div></div>
+<div class="hero-card"><h3>Simple, personalised lessons</h3><div class="price">$120 <small> / 60 minutes</small></div><div class="price">$160 <small> / 90 minutes</small></div><p>Weekdays generally after 4pm · Weekends by appointment · School holidays throughout the day.</p></div>
+</div></header>
+
+<section id="lessons"><div class="container"><div class="section-head"><h2>Lessons designed around the learner</h2><p>Every learner starts from a different point. Lessons are adjusted to their experience, confidence, current skills and goals.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🚗</div><h3>Individual lessons</h3><p>One-on-one tuition focused on the skills the learner needs next — from vehicle control and observation through to traffic situations, decision-making and independent driving.</p></div>
+<div class="card"><div class="icon">🌱</div><h3>Build good habits early</h3><p>In my experience, the first professional lesson is ideally around the <strong>10–15 hour mark</strong>. By then the learner has had some time to become comfortable with the car, and a lesson or two can help establish correct habits early and build on them as they progress.</p><p>An earlier lesson can also be very beneficial if parents would like guidance from the beginning.</p></div>
+<div class="card"><div class="icon">🧭</div><h3>Progress, not just test preparation</h3><p>The aim is to develop a safe, confident driver — not simply someone who can perform a test route. We work towards skills that remain useful long after the provisional licence is obtained.</p></div>
+</div>
+<div class="two" style="margin-top:28px">
+<div class="card"><h3>Lesson length</h3><p><strong>60 minutes — $120</strong><br>Ideal for focused skill development and regular practice.</p><p><strong>90 minutes — $160</strong><br>Useful for combining several skills or working on test preparation.</p><p class="note">Longer than 90 minutes is generally not recommended because concentration and learning quality can decline. Longer sessions can be considered where appropriate.</p></div>
+<div class="card"><h3>Pick-up and drop-off</h3><p>Depending on location, most lessons can start from <strong>school or home</strong> and finish at your home. This makes lessons easier to fit around school, work and family commitments.</p><p><strong>Availability:</strong> generally after 4pm on weekdays, weekends by appointment, and throughout school holidays.</p></div>
+</div></div></section>
+
+<section class="alt" id="parents"><div class="container"><div class="section-head"><h2>A note for parents</h2><p>Parents are an important part of the learning process. My goal is to complement the practice you are already doing at home.</p></div>
+<div class="two"><div class="quote"><h3>“Should my child have a lesson every week?”</h3><p>My general answer is <strong>no — not necessarily.</strong> Learners need time between professional lessons to practise and consolidate the skills they've been taught. Regular home practice can be just as important as the lesson itself.</p><p>That said, if a learner needs more frequent support, weekly lessons are absolutely possible.</p></div>
+<div class="card"><h3>How I work with families</h3><ul><li>Clear feedback after lessons.</li><li>Practical suggestions for what to practise next.</li><li>Focus on safe habits rather than simply accumulating hours.</li><li>Support for parents who aren't sure what to practise or how to structure sessions.</li><li>Progress towards independent driving, not dependence on an instructor.</li></ul></div></div></div></section>
+
+<section id="test"><div class="container"><div class="section-head"><h2>Driving test preparation</h2><p>When the learner is ready, lessons can become more focused on test preparation without losing sight of the bigger goal: safe independent driving.</p></div>
+<div class="grid">
+<div class="card"><h3>Tranmere test area</h3><p>At least one lesson is focused in the <strong>Tranmere area</strong>, where the learner's test will be conducted. This helps learners become familiar with the types of roads, intersections, traffic conditions and situations they may encounter.</p></div>
+<div class="card"><h3>Test-day skills</h3><p>We can work on observation, speed management, lane positioning, intersections, roundabouts, parking, manoeuvres, decision-making and the learner's ability to drive independently.</p></div>
+<div class="card"><h3>Mock-test approach</h3><p>As the test approaches, lessons can be structured to replicate the demands of an assessment and identify any remaining weaknesses before test day.</p></div>
+</div></div></section>
+
+<section class="alt" id="mdi"><div class="container"><div class="section-head"><h2>MDI preparation</h2><p>Preparing to become a Motor Driving Instructor? This is a specialist service and is offered separately from standard learner lessons.</p></div>
+<div class="callout"><h2>Preparation for potential MDIs</h2><p>Drawing on practical experience with driver instruction, I can provide targeted preparation for people considering or working towards the South Australian Motor Driving Instructor pathway.</p><p>Sessions can be tailored to areas such as commentary driving, hazard identification, risk reduction, teaching points, observation and instructional technique.</p><p><strong>Different rates apply for MDI preparation.</strong> Please contact me to discuss your requirements and the type of preparation you need.</p><a class="btn primary" href="#contact">Enquire about MDI preparation</a></div></div></section>
+
+<section id="about"><div class="container"><div class="section-head"><h2>About Ryan</h2><p>A calm, practical approach to learning to drive.</p></div>
+<div class="two"><div><p>I have spent many years working with young people, and one of the things I value most is the relationships built along the way. Learning to drive can be exciting, but it can also be stressful. I aim to create lessons where learners feel supported, challenged appropriately and comfortable asking questions.</p><p>My teaching approach is built around clear explanations, patience and progressive skill development. The learner should understand <em>why</em> a particular driving decision is safe — not simply memorise what to do.</p><p>I also use a new <strong>MG hybrid</strong> for lessons, providing a modern, comfortable and more environmentally conscious training vehicle.</p></div>
+<div class="card"><h3>What you can expect</h3><ul><li>Patient, professional instruction</li><li>Lessons adapted to the learner</li><li>Practical feedback and clear goals</li><li>Eastern & North-Eastern Adelaide focus</li><li>Tranmere test-area experience</li><li>Support for both learners and parents</li></ul></div></div></div></section>
+
+<section class="alt"><div class="container"><div class="section-head"><h2>Where and when?</h2><p>Designed to fit around school, work and family life.</p></div>
+<div class="location-pills"><span class="pill">Eastern suburbs</span><span class="pill">North-Eastern suburbs</span><span class="pill">Tranmere</span><span class="pill">Weekdays after 4pm</span><span class="pill">Weekends by appointment</span><span class="pill">School holidays</span></div>
+<div class="two" style="margin-top:30px"><div class="card"><h3>Service area</h3><p>Ryan's Driving School focuses on Adelaide's Eastern and North-Eastern suburbs, with particular attention to the Tranmere test area.</p></div><div class="card"><h3>Flexible starts</h3><p>Depending on location, lessons can generally start from home or school and finish at home.</p></div></div></div></section>
+
+<section id="faq"><div class="container faq"><div class="section-head"><h2>Frequently asked questions</h2></div>
+<details><summary>How do I book a lesson?</summary><p>At the moment, the easiest way is to call. I find this works particularly well for parents because we can discuss the learner's experience, availability and what you are hoping to achieve.</p></details>
+<details><summary>Should my child have a lesson every week?</summary><p>Not necessarily. Time between lessons allows learners to practise and consolidate skills. Weekly lessons are available when a learner needs more frequent support.</p></details>
+<details><summary>When should my child have their first professional lesson?</summary><p>In my experience, around the 10–15 hour mark is often ideal. A lesson or two at this stage can help form correct habits early and provide a strong foundation. Earlier lessons can also be useful if parents want guidance from the beginning.</p></details>
+<details><summary>Are 90-minute lessons better than 60-minute lessons?</summary><p>Not automatically. Ninety minutes can be useful for combining skills or doing more extensive test preparation, but concentration can become an issue beyond 90 minutes. Quality of learning is more important than simply increasing lesson length.</p></details>
+<details><summary>Do you offer MDI preparation?</summary><p>Yes. Preparatory lessons for potential Motor Driving Instructors are a speciality and are priced differently from standard learner lessons. Contact me to discuss your needs.</p></details>
+<details><summary>Can lessons start at school?</summary><p>Depending on location and timing, most lessons can start from school or home and finish at your home.</p></details>
+<details><summary>Do you teach in the Tranmere test area?</summary><p>Yes. At least one lesson is focused in the Tranmere area where your test will be conducted, with additional test-area preparation as required.</p></details>
+</div></section>
+
+<section id="contact"><div class="container"><div class="section-head"><h2>Ready to get started?</h2><p>Call to discuss the learner, availability and the best starting point.</p></div>
+<div class="contact"><div class="contact-box"><h3>Book a lesson</h3><p>Phone bookings are currently preferred. This gives us a chance to discuss the learner and make sure the first lesson is appropriate.</p><p><strong>Phone:</strong> <span>[YOUR PHONE NUMBER]</span></p><p><strong>Email:</strong> <span>[YOUR EMAIL ADDRESS]</span></p><a class="cta" href="tel:[YOUR PHONE NUMBER]">Call Ryan's Driving School</a></div>
+<div class="contact-box"><h3>Rates</h3><p><strong>60 minutes — $120</strong></p><p><strong>90 minutes — $160</strong></p><p>MDI preparation: <strong>different rates apply</strong>.</p><p class="note">Business details such as ABN can be added here if desired. Bank account details should not normally be displayed publicly; provide payment instructions privately when needed.</p></div></div>
+</div></section>
+
+<footer><div class="container footer-grid"><div><strong>Ryan's Driving School</strong><br>Eastern & North-Eastern Adelaide</div><div>Personalised lessons · Tranmere test preparation · MDI preparation</div><div>© <span id="year"></span> Ryan's Driving School</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));</script>
+</body>
+</html>
